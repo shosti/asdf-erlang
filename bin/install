@@ -35,6 +35,8 @@ install_erlang() {
     ./configure $configure_options || exit 1
     make || exit 1
     make install || exit 1
+    make docs || exit 1
+    make install-docs || exit 1
   )
 }
 
